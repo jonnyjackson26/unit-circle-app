@@ -1,0 +1,75 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Unit circle -->
+  <circle
+    cx="256"
+    cy="256"
+    r="150"
+    fill="none"
+    stroke="white"
+    stroke-width="28"
+  />
+
+  <!-- Axes -->
+  <line x1="256" y1="80" x2="256" y2="432" stroke="white" stroke-width="14" stroke-linecap="round" />
+  <line x1="80" y1="256" x2="432" y2="256" stroke="white" stroke-width="14" stroke-linecap="round" />
+
+  <!-- Radius line (ends exactly at inner edge of ring) -->
+  <line
+    x1="256"
+    y1="256"
+    x2="404"
+    y2="141"
+    stroke="white"
+    stroke-width="18"
+  />
+
+  <!-- Draggable handle (hollow ring) -->
+  <!-- Ring center at (420, 132), r=18, stroke=7 -->
+  <!-- Inner edge = 18 - 3.5 = 14.5 -->
+  <circle
+    cx="420"
+    cy="132"
+    r="18"
+    fill="none"
+    stroke="white"
+    stroke-width="7"
+  />
+
+  <!-- Center point -->
+  <circle cx="256" cy="256" r="18" fill="white" />
+
+  <!-- Angle fill (0° to radius line) -->
+<path
+  d="
+    M 258 258
+    L 396 260
+    A 136 136 0 0 0 363 173
+    Z
+  "
+  fill="white"
+  opacity="0.55"
+/>
+
+  <!-- Axis labels -->
+  <!--
+  <text
+    x="468"
+    y="268"
+    fill="white"
+    font-size="55"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+    font-weight="600"
+  >x</text>
+
+  <text
+    x="246"
+    y="52"
+    fill="white"
+    font-size="50"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+    font-weight="600"
+  >y</text>
+  -->
+
+</svg>
