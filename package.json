@@ -3,10 +3,10 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "bunx rork start -p 1w9dhpg3w6l380mpdr7a7 --tunnel",
-    "start-web": "bunx rork start -p 1w9dhpg3w6l380mpdr7a7 --web --tunnel",
-    "start-web-dev": "DEBUG=expo* bunx rork start -p 1w9dhpg3w6l380mpdr7a7 --web --tunnel",
-    "lint": "expo lint"
+    "start": "expo start --tunnel",
+    "start-web": "expo start --web --tunnel",
+    "start-web-dev": "DEBUG=expo* expo start --web --tunnel",
+    "dev": "cross-env APP_VARIANT=development npx expo start --tunnel"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
