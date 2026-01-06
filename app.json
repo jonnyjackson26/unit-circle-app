@@ -22,7 +22,7 @@
           "foregroundImage": "./assets/icons/adaptive-icon.png",
           "backgroundColor": "#ffffff"
         },
-        "package": "app.rork.interactive-unit-circle-app"
+        "package": "com.jrsjackson26.unitcircle"
       },
       "web": {
         "favicon": "./assets/icons/favicon.png"
