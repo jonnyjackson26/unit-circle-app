@@ -1,42 +1,44 @@
 {
-    "expo": {
-      "name": "Interactive Unit Circle App",
-      "slug": "interactive-unit-circle-app",
-      "version": "1.0.0",
-      "orientation": "portrait",
-      "icon": "./assets/icons/ios-light.png",
-      "scheme": "myapp",
-      "userInterfaceStyle": "automatic",
-      "newArchEnabled": true,
-      "splash": {
-        "image": "./assets/icons/splash-icon-light.png",
-        "resizeMode": "contain",
+  "expo": {
+    "name": "Interactive Unit Circle App",
+    "slug": "interactive-unit-circle-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/ios-light.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/icons/splash-icon-light.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.rork.interactive-unit-circle-app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "ios": {
-        "supportsTablet": true,
-        "bundleIdentifier": "app.rork.interactive-unit-circle-app"
-      },
-      "android": {
-        "adaptiveIcon": {
-          "foregroundImage": "./assets/icons/adaptive-icon.png",
-          "backgroundColor": "#ffffff"
-        },
-        "package": "com.jrsjackson26.unitcircle"
-      },
-      "web": {
-        "favicon": "./assets/icons/favicon.png"
-      },
-      "plugins": [
-        [
-          "expo-router",
-          {
-            "origin": "https://rork.com/"
-          }
-        ]
+      "package": "com.jrsjackson26.unitcircle"
+    },
+    "web": {
+      "favicon": "./assets/icons/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://rork.com/"
+        }
       ],
-      "experiments": {
-        "typedRoutes": true
-      }
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
     }
   }
+}
